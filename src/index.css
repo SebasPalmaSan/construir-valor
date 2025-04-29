@@ -1,0 +1,134 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-primary: Teko, sans-serif;
+  --font-secondary: Saira, sans-serif;
+
+  --color-primary-50: #fdf1ec;
+  --color-primary-100: #f8d4c3;
+  --color-primary-200: #f5bfa6;
+  --color-primary-300: #f1a17d;
+  --color-primary-400: #ee8f64;
+  --color-primary-500: #ea733d;
+  --color-primary-600: #d56938;
+  --color-primary-700: #a6522b;
+  --color-primary-800: #813f22;
+  --color-primary-900: #62301a;
+
+  --color-secondary-50: #f1f1f1;
+  --color-secondary-100: #d2d2d3;
+  --color-secondary-200: #bcbcbd;
+  --color-secondary-300: #9e9e9f;
+  --color-secondary-400: #8b8b8d;
+  --color-secondary-500: #6e6e70;
+  --color-secondary-600: #646466;
+  --color-secondary-700: #4e4e50;
+  --color-secondary-800: #3d3d3e;
+  --color-secondary-900: #2e2e2f;
+
+  --color-accent-50: #fff8e6;
+  --color-accent-100: #ffe8b0;
+  --color-accent-200: #ffdd8a;
+  --color-accent-300: #ffce54;
+  --color-accent-400: #ffc533;
+  --color-accent-500: #ffb600;
+  --color-accent-600: #e8a600;
+  --color-accent-700: #b58100;
+  --color-accent-800: #8c6400;
+  --color-accent-900: #6b4c00;
+}
+
+/* Saira */
+
+@font-face {
+  font-family: 'Saira';
+  src: url('./assets/fonts/Saira-Bold.woff2') format('woff2'),
+      url('./assets/fonts/Saira-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saira';
+  src: url('./assets/fonts/Saira-Medium.woff2') format('woff2'),
+      url('./assets/fonts/Saira-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saira';
+  src: url('./assets/fonts/Saira-ExtraBold.woff2') format('woff2'),
+      url('./assets/fonts/Saira-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saira';
+  src: url('./assets/fonts/Saira-Regular.woff2') format('woff2'),
+      url('./assets/fonts/Saira-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saira';
+  src: url('./assets/fonts/Saira-SemiBold.woff2') format('woff2'),
+      url('./assets/fonts/Saira-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Teko */
+
+@font-face {
+  font-family: 'Teko';
+  src: url('./assets/fonts/Teko-Bold.woff2') format('woff2'),
+      url('./assets/fonts/Teko-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Teko';
+  src: url('./assets/fonts/Teko-Medium.woff2') format('woff2'),
+      url('./assets/fonts/Teko-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Teko';
+  src: url('./assets/fonts/Teko-ExtraBold.woff2') format('woff2'),
+      url('./assets/fonts/Teko-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Teko';
+  src: url('./assets/fonts/Teko-Regular.woff2') format('woff2'),
+      url('./assets/fonts/Teko-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Teko';
+  src: url('./assets/fonts/Teko-SemiBold.woff2') format('woff2'),
+      url('./assets/fonts/Teko-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+

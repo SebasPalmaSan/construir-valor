@@ -1,6 +1,7 @@
 import NavLink from './NavLink';
 import logo from '../../../public/images/logos/construir_valor_logo_color-removebg-preview.png';
 import Button from '../buttons/Button';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -8,16 +9,18 @@ const Navbar = () => {
       <div className="flex items-center justify-between h-20 px-6">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <img src={logo} alt="Construir Valor" className="h-18 object-contain" />
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Construir Valor" className="h-18 object-contain" />
+          </Link>
         </div>
 
         {/* Links */}
         <nav className="flex space-x-8">
-          <NavLink href="#inicio" label="Inicio" />
-          <NavLink href="#nosotros" label="Nosotros" />
-          <NavLink href="#obras" label="Obras" />
-          <NavLink href="#servicios" label="Servicios" />
-          <NavLink href="#clientes" label="Clientes" />
+          <NavLink href="/" label="Inicio" />
+          <NavLink href="/nosotros" label="Nosotros" />
+          <NavLink href="/obras" label="Obras" />
+          <NavLink href="/servicios" label="Servicios" />
+          <NavLink href="/clientes" label="Clientes" />
           <Button variant='primary' size='sm'>Solicitar presupuesto</Button>
         </nav>
       </div>

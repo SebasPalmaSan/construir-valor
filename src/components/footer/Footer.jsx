@@ -22,7 +22,7 @@ const Footer = () => {
             <p className="flex items-center justify-center md:justify-start gap-2 text-primary-500">
               <MdLocationOn />
               <span className='text-secondary-200'>
-                Av. Francisco Beiró 4685 - CABA
+                Av. Lacarra 391 - CABA
               </span>
             </p>
             <p>Buenos Aires, Argentina</p>
@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="space-y-1 text-secondary-200 mt-4 md:mt-0">
             <p className="flex items-center justify-center md:justify-start gap-2">
               <FaInstagram className="text-primary-500" />
-              construirvalor_ok
+              @construirvalor
             </p>
             <p className="flex items-center justify-center md:justify-start gap-2">
               <FaFacebook className="text-primary-500" />

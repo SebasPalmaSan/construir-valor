@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-const NavLink = ({ href, label }) => {
+const NavLink = ({ to, label }) => {
   return (
-    <a
-      href={href}
+    <Link
+      to={to}
       className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg"
     >
       {label}
-    </a>
+    </Link>
   );
 };
 
 NavLink.propTypes = {
-  href: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
 };
 

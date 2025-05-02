@@ -19,11 +19,10 @@ const AboutUs = () => {
               ¿Quiénes somos?
             </h2>
             <p className="flex justify-center font-secondary text-secondary-900 leading-relaxed text-base md:text-lg">
-            En Construir Valor, no solo construimos obras: construimos confianza, relaciones duraderas y espacios que trascienden generaciones. 
-            Desde nuestros inicios, nos hemos comprometido con un propósito claro: brindar soluciones integrales en arquitectura, ingeniería y construcción, apostando siempre por la calidad, la innovación y la responsabilidad. 
-            Somos un equipo de profesionales apasionados por lo que hacemos, con más de una década de trayectoria en el rubro edilicio, comercial, industrial y público. 
-            Nuestro diferencial radica en la capacidad de acompañar a cada cliente en todas las etapas del proyecto, desde la concepción de la idea hasta la entrega final, 
-            garantizando un servicio personalizado y un estándar de excelencia en cada detalle. A lo largo de los años hemos desarrollado obras que se destacan por su funcionalidad, diseño y solidez.
+            En Construir Valor, creamos más que obras: creamos confianza, vínculos duraderos y espacios pensados.
+            Desde nuestros comienzos, asumimos un compromiso firme con la calidad, la innovación y la responsabilidad, ofreciendo soluciones integrales en arquitectura, ingeniería y construcción. Con más de una década de experiencia en proyectos edilicios, comerciales, industriales y del ámbito público, nuestro equipo de profesionales combina pasión y conocimiento en cada obra.
+            Nuestro mayor diferencial es el acompañamiento cercano: guiamos a cada cliente en todas las etapas del proceso, desde la idea inicial hasta la entrega final, garantizando un servicio personalizado y una ejecución de excelencia. Los proyectos que realizamos se destacan por su funcionalidad, diseño y solidez, reflejando nuestra visión de construir con valor y para el futuro.
+
             </p>
           </div>
         </div>

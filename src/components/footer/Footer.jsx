@@ -1,6 +1,7 @@
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
-import Logo from '/public/images/logos/construir valor_logo blanco.png'; 
+import Logo from '/public/images/logos/construir valor_logo blanco.png';
+import IsoLogo from '/public/images/logos/construir valor_iso blanco.png';
 
 const Footer = () => {
   return (
@@ -8,10 +9,17 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-between gap-8">
         {/* Logo */}
         <div className="flex-shrink-0">
+          {/* Logo completo para pantallas medianas y grandes */}
           <img
             src={Logo}
             alt="Construir Valor logo"
-            className="w-80 h-auto"
+            className="hidden md:block w-80 h-auto"
+          />
+          {/* Iso logo para pantallas móviles */}
+          <img
+            src={IsoLogo}
+            alt="Construir Valor iso logo"
+            className="block md:hidden w-32 h-auto"
           />
         </div>
 
@@ -21,15 +29,18 @@ const Footer = () => {
           <div className="space-y-1 text-secondary-200">
             <p className="flex items-center justify-center md:justify-start gap-2 text-primary-500">
               <MdLocationOn />
-              <span className='text-secondary-200'>
+              <span className="text-secondary-200">
                 Av. Lacarra 391 - CABA
               </span>
             </p>
             <p>Buenos Aires, Argentina</p>
             <p className="flex items-center justify-center md:justify-start gap-2 text-primary-500">
               <MdPhone />
-              <span className='text-secondary-200'>
-                (011) 4123-4567
+              <span className="text-secondary-200">
+                (+54) 9 11 7168-6433
+              </span>
+              <span className="text-secondary-200">
+                (+54) 9 11 2646-0547
               </span>
             </p>
           </div>
@@ -40,13 +51,13 @@ const Footer = () => {
               <FaInstagram className="text-primary-500" />
               @construirvalor
             </p>
-            <p className="flex items-center justify-center md:justify-start gap-2">
+            {/* <p className="flex items-center justify-center md:justify-start gap-2">
               <FaFacebook className="text-primary-500" />
               construirvalorok
-            </p>
+            </p> */}
             <p className="flex items-center justify-center md:justify-start gap-2">
               <MdEmail className="text-primary-500" />
-              info@construirvalor.com
+              info@construirvalor.com.ar
             </p>
           </div>
         </div>

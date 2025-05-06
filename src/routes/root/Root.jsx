@@ -6,6 +6,8 @@ import Services from "../../sections/Services";
 import Featured from "../../sections/Featured";
 import Clients from "../../sections/Clients";
 import Contact from "../../sections/Contact";
+import { Link } from "react-router-dom";
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Root = () => {
   return (
@@ -32,6 +34,16 @@ const Root = () => {
         </section>
       </main>
       <Footer />
+      {/* Botón de WhatsApp */}
+      <Link
+        to="https://wa.me/5491171686433"
+        className="fixed bottom-35 right-2 md:bottom-28 md:right-4 bg-green-500 hover:bg-green-600 text-white rounded-full p-3 shadow-lg"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ zIndex: 9999 }}
+      >
+        <IoLogoWhatsapp size={40} />
+      </Link>
     </div>
   );
 };

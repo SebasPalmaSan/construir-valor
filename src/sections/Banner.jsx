@@ -1,7 +1,22 @@
 import Button from '../components/buttons/Button';
 import Image from '../../public/images/image1.png'; 
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const closeMenu = () => setIsOpen(false);
+
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      closeMenu(); // Cierra el menú móvil si está abierto
+    }
+  };
+
   return (
     <section className="relative w-full h-[500px] flex items-center justify-center">
       {/* Imagen de fondo */}
@@ -22,9 +37,11 @@ const Banner = () => {
         </h1>
 
         <div className='mt-20'>
+          <Link to="/" onClick={() => handleScroll('featured')}  className="inline-block">
             <Button variant="primary">
                 Conocé nuestras obras
             </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -5,12 +5,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import NavLink from './NavLink';
 import Button from '../buttons/Button';
+import QuoteModal from '../modals/QuoteModal';
+
 
 import logo from '../../../public/images/logos/construir_valor_logo_color-removebg-preview.png';
 import isoLogo from '../../../public/images/logos/construir valor_iso color.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -57,9 +61,10 @@ const Navbar = () => {
           <Link to="/" onClick={() => handleScroll('clients')} className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg">
             Clientes
           </Link>
-          <Link to="/" onClick={() => handleScroll('contact')}>
-            <Button variant="primary" size="sm">Solicitar presupuesto</Button>
-          </Link>
+            <button onClick={() => setShowModal(true)}>
+              <Button variant="primary" size="sm">Solicitar presupuesto</Button>
+            </button>
+
         </nav>
 
         {/* Menú hamburguesa - SIEMPRE visible en móviles */}
@@ -123,6 +128,8 @@ const Navbar = () => {
           </>
         )}
       </AnimatePresence>
+      <QuoteModal isOpen={showModal} onClose={() => setShowModal(false)} />
+
     </header>
   );
 };

@@ -37,7 +37,7 @@ const Clients = () => {
   return (
     <section id="clients" className="bg-secondary-900 py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-white text-center text-2xl md:text-5xl font-primary mb-12">
+        <h2 className="text-white text-center text-3xl md:text-5xl font-primary mb-12">
           Nuestros Clientes
         </h2>
 

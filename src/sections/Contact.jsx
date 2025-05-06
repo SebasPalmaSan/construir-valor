@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Button  from "../components/buttons/Button";
+import emailjs from '@emailjs/browser';
+import Button from "../components/buttons/Button";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,14 +20,33 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Formulario enviado:", formData);
-    // Aquí podés agregar lógica para enviar los datos (email, API, etc.)
+
+    emailjs.send(
+      'service_s4y4i4k', // <- reemplazá con tu SERVICE ID
+      'template_2jiafto', // <- reemplazá con tu TEMPLATE ID
+      formData,
+      'kYw5_1QY8nKKFEg5-' // <- reemplazá con tu PUBLIC KEY
+    )
+    .then(() => {
+      alert("Mensaje enviado con éxito. ¡Gracias por contactarnos!");
+      setFormData({
+        nombre: "",
+        apellido: "",
+        telefono: "",
+        mail: "",
+        mensaje: "",
+      });
+    })
+    .catch((error) => {
+      console.error("Error al enviar mensaje:", error);
+      alert("Hubo un error al enviar tu mensaje. Por favor, intentá nuevamente.");
+    });
   };
 
   return (
     <section id="contacto" className="bg- py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-secondary-900 text-center text-2xl md:text-6xl font-primary mb-12">
+        <h2 className="text-secondary-900 text-center text-3xl md:text-6xl font-primary mb-12">
           Contacto
         </h2>
 

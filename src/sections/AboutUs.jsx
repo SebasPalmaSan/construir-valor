@@ -15,7 +15,7 @@ const AboutUs = () => {
   
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2">
-            <h2 className="flex justify-center text-2xl md:text-6xl font-primary text-secondary-900 mb-4">
+            <h2 className="flex justify-center text-3xl md:text-6xl font-primary text-secondary-900 mb-4">
               ¿Quiénes somos?
             </h2>
             <p className="flex justify-center font-secondary text-secondary-900 leading-relaxed text-base md:text-lg">

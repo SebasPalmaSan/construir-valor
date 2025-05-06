@@ -1,0 +1,39 @@
+[
+    {
+      "title": "Boedo",
+      "year": 2025,
+      "images": ["boedo2025-1.png"],
+      "review": "Reparación de techo en vivienda de Boedo. En esta obra abordamos la reparación integral del techo de una vivienda afectada por filtraciones prolongadas. Las clavaderas estaban completamente deterioradas, lo que provocó el desprendimiento de las chapas y el colapso parcial de la cubierta. Nuestro trabajo consistió en el retiro completo de la estructura de madera dañada, su reemplazo por una nueva estructura sólida y segura, la colocación de chapas nuevas y la instalación de un sistema de zinguería renovado."
+    },
+    {
+      "title": "Pileta - Canning",
+      "year": 2025,
+      "images": ["Canning-pileta-2025.jpg"],
+      "review": "Construcción de pileta de 15 x 6 m en country de Canning. Proyecto realizado desde cero, abarcando todas las etapas de obra: desde la excavación inicial hasta la colocación del revestimiento final. Los trabajos incluyeron tareas de albañilería, plomería (instalación del sistema de filtrado y climatización del agua) y electricidad (iluminación interior de la pileta). La ejecución comprendió: excavación, compactación del terreno, construcción de mampostería de contención, hormigonado estructural y revestimiento final con piedra Bali, aportando un acabado estético y duradero."
+    },
+    {
+      "title": "Muelle 82",
+      "year": 2021,
+      "images": ["Muelle-82.png"],
+      "review": "Obra en Muelles 82 – Construcción en seco llave en mano. Proyecto desarrollado íntegramente desde cero mediante sistema de construcción en seco, lo que permitió una ejecución rápida y eficiente en un plazo total de 45 días. La obra incluyó el montaje de estructura metálica, instalaciones completas de plomería y electricidad, aplicación de aislaciones hidrófugas y acústicas, y terminaciones finales con pintura. Además, se realizó el diseño interior y se entregó el espacio totalmente terminado, bajo la modalidad “llave en mano”. La construcción en seco nos permitió optimizar tiempos sin comprometer calidad, logrando una solución moderna, funcional y durable."
+    },
+    {
+      "title": "Galpón 2500 mts",
+      "year": 2018,
+      "images": ["Galpon-2500mts-1.JPG", "Galpon-2500mts-2.JPG", "Galpon-2500mts-3.JPG", "Galpon-2500mts-4.JPG", "Galpon-2500mts-5.JPG", "Galpon-2500mts-6.JPG"],
+      "review": "Espacio logístico de gran escala."
+    },
+    {
+      "title": "Pileta",
+      "year": 2019,
+      "images": ["Pileta.jpg"],
+      "review": "Construcción de pileta de uso mixto."
+    },
+    {
+      "title": "Tinglado C.A.S.I",
+      "year": 2022,
+      "images": ["Tinglado.JPG"],
+      "review": "Cubierta metálica para club deportivo."
+    }
+  ]
+  

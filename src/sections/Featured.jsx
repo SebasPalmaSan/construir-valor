@@ -51,7 +51,7 @@ const Featured = () => {
                 />
 
                 {/* Tooltip que aparece al hacer hover */}
-                <div className="absolute inset-0 bg-secondary-900 bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 text-sm text-center transition duration-300 line-clamp-5">
+                <div className="absolute inset-0 bg-secondary-900 bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 text-sm text-center transition duration-300 line-clamp-3">
                   <span>{item.review}</span>
                 </div>
               </div>

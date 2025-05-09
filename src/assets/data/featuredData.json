@@ -2,13 +2,13 @@
     {
       "title": "Boedo",
       "year": 2025,
-      "images": ["boedo2025-1.png"],
+      "images": ["boedo2025-1.png", "boedo2025-2.png", "boedo2025-3.png", "boedo2025-4.png"],
       "review": "Reparación de techo en vivienda de Boedo. En esta obra abordamos la reparación integral del techo de una vivienda afectada por filtraciones prolongadas. Las clavaderas estaban completamente deterioradas, lo que provocó el desprendimiento de las chapas y el colapso parcial de la cubierta. Nuestro trabajo consistió en el retiro completo de la estructura de madera dañada, su reemplazo por una nueva estructura sólida y segura, la colocación de chapas nuevas y la instalación de un sistema de zinguería renovado."
     },
     {
       "title": "Pileta - Canning",
       "year": 2025,
-      "images": ["Canning-pileta-2025.jpg"],
+      "images": ["Canning-pileta-2025-1.jpg", "Canning-pileta-2025-2.jpg", "Canning-pileta-2025-3.jpg", "Canning-pileta-2025-4.jpg", "Canning-pileta-2025-5.jpg", "Canning-pileta-2025-6.jpg", "Canning-pileta-2025-7.jpg", "Canning-pileta-2025-8.jpg", "Canning-pileta-2025-9.jpg"],
       "review": "Construcción de pileta de 15 x 6 m en country de Canning. Proyecto realizado desde cero, abarcando todas las etapas de obra: desde la excavación inicial hasta la colocación del revestimiento final. Los trabajos incluyeron tareas de albañilería, plomería (instalación del sistema de filtrado y climatización del agua) y electricidad (iluminación interior de la pileta). La ejecución comprendió: excavación, compactación del terreno, construcción de mampostería de contención, hormigonado estructural y revestimiento final con piedra Bali, aportando un acabado estético y duradero."
     },
     {
@@ -20,7 +20,7 @@
     {
       "title": "Galpón 2500 mts",
       "year": 2018,
-      "images": ["Galpon-2500mts-1.JPG", "Galpon-2500mts-2.JPG", "Galpon-2500mts-3.JPG", "Galpon-2500mts-4.JPG", "Galpon-2500mts-5.JPG", "Galpon-2500mts-6.JPG"],
+      "images": ["Galpon-2500mts-1.jpg", "Galpon-2500mts-2.jpg", "Galpon-2500mts-3.jpg", "Galpon-2500mts-4.jpg", "Galpon-2500mts-5.jpg", "Galpon-2500mts-6.jpg"],
       "review": "Espacio logístico de gran escala."
     },
     {

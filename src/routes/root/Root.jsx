@@ -8,10 +8,12 @@ import Clients from "../../sections/Clients";
 import Contact from "../../sections/Contact";
 import { Link } from "react-router-dom";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import Notifications from "../../components/Notifications";
 
 const Root = () => {
   return (
     <div className="root-container">
+      <Notifications />
       <Navbar />
       <main>
         <section id="banner">

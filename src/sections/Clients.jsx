@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useMetadata } from "../utils/MetadataContext";
 import Image1 from "../../public/images/image6.jpg";
 import Image2 from "../../public/images/image7.png";
 import Image3 from "../../public/images/image8.png";
@@ -7,34 +8,39 @@ const clientsData = [
   {
     name: "Juan Pérez (Empresa Constructora El Pilar)",
     image: Image1,
-    comment: "Contratamos el servicio para una obra edilicia de gran envergadura en la zona de Palermo, y desde el primer contacto notamos profesionalismo, puntualidad y atención al detalle. El equipo no solo cumplió con los tiempos pactados, sino que también aportó soluciones innovadoras a desafíos imprevistos que surgieron durante la ejecución del proyecto. La calidad de los materiales y la mano de obra.",
+    comment:
+      "Contratamos el servicio para una obra edilicia de gran envergadura en la zona de Palermo...",
   },
   {
     name: "Lucía Fernández (Gerente de Compras, Centro Médico Vital)",
     image: Image2,
-    comment: "Nuestra institución necesitaba una remodelación integral de varios sectores clave, incluyendo áreas de atención al paciente. Desde el primer momento, el equipo nos brindó confianza con una propuesta clara y ajustada a nuestras necesidades. Nos sorprendió gratamente la organización del trabajo y cómo lograron mantener la actividad del centro sin interrupciones significativas durante la obra.",
+    comment:
+      "Nuestra institución necesitaba una remodelación integral de varios sectores clave...",
   },
   {
     name: "Roberto Méndez (Director General, Granja Tres Arroyos S.A.)",
     image: Image3,
-    comment: "Encargamos un proyecto industrial complejo con necesidades técnicas específicas, y la experiencia fue excelente de principio a fin. Nos ayudaron a optimizar los espacios y garantizar la seguridad estructural sin comprometer la operatividad del área. Se adaptaron a nuestros horarios productivos, evitando paradas innecesarias y asegurando que la obra avanzara sin afectar el flujo del negocio.",
+    comment:
+      "Encargamos un proyecto industrial complejo con necesidades técnicas específicas...",
   },
 ];
 
 const Clients = () => {
+  const { setTitle, setDescription, activeSection } = useMetadata();
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setSelectedIndex((prevIndex) => (prevIndex + 1) % clientsData.length);
-    }, 20000);
-
-    return () => clearInterval(interval);
-  }, []);
+    if (activeSection === "clients") {
+      setTitle("Nuestros Clientes | Construir Valor - Obras en CABA y GBA");
+      setDescription(
+        "Descubre lo que nuestros clientes opinan sobre Construir Valor. Proyectos destacados en CABA y GBA."
+      );
+    }
+  }, [activeSection, setTitle, setDescription]);
 
   const selectedClient = clientsData[selectedIndex];
 
-  return (
+   return (
     <section id="clients" className="bg-secondary-900 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-white text-center text-3xl md:text-5xl font-primary mb-12">

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/NavBar";
 import Banner from "../../sections/Banner";
@@ -9,8 +10,30 @@ import Contact from "../../sections/Contact";
 import { Link } from "react-router-dom";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import Notifications from "../../components/Notifications";
+import { useMetadata } from "../../utils/MetadataContext";
 
 const Root = () => {
+  const { setActiveSection } = useMetadata();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      let currentSection = "banner";
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          currentSection = section.id;
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [setActiveSection]);
+
   return (
     <div className="root-container">
       <Notifications />

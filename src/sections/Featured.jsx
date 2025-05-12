@@ -1,30 +1,41 @@
-import { useEffect, useState } from 'react';
-import featuredData from '../assets/data/featuredData.json';
+import { useEffect, useState } from "react";
+import featuredData from "../assets/data/featuredData.json";
+import { useMetadata } from "../utils/MetadataContext";
 
 const Featured = () => {
   const [featuredItems, setFeaturedItems] = useState([]);
   const [modalOpen, setModalOpen] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
-  const [currentTitle, setCurrentTitle] = useState('');
+  const [currentTitle, setCurrentTitle] = useState("");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { setTitle, setDescription, activeSection } = useMetadata();
 
   useEffect(() => {
     setFeaturedItems(featuredData);
   }, []);
+
+  useEffect(() => {
+    if (activeSection === "featured") {
+      setTitle("Obras destacadas | Construir Valor - Obras en CABA y GBA");
+      setDescription(
+        "Explora nuestras obras destacadas en Construir Valor. Proyectos que reflejan calidad y compromiso en CABA y GBA."
+      );
+    }
+  }, [activeSection, setTitle, setDescription]);
 
   const openModal = (images, title) => {
     setCurrentImages(images);
     setCurrentTitle(title);
     setCurrentImageIndex(0);
     setModalOpen(true);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
   };
 
   const closeModal = () => {
     setModalOpen(false);
     setCurrentImages([]);
-    setCurrentTitle('');
-    document.body.style.overflow = 'auto';
+    setCurrentTitle("");
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -36,12 +47,11 @@ const Featured = () => {
 
         <div className="flex gap-4 overflow-x-auto scrollbar-hide sm:grid sm:grid-cols-2 md:grid-cols-4 sm:overflow-visible">
           {featuredItems.map((item, index) => (
-
             <div
               key={index}
               className="flex-shrink-0 w-72 sm:w-auto flex flex-col items-center cursor-pointer"
               onClick={() => openModal(item.images, item.title)}
-              >
+            >
               {/* Imagen con tooltip flotante */}
               <div className="relative group bg-white rounded-md overflow-hidden shadow-md">
                 <img
@@ -61,20 +71,9 @@ const Featured = () => {
                 <h3 className="font-normal text-lg text-secondary-900 mb-1">
                   {item.title}
                 </h3>
-
                 <p className="text-sm text-secondary-900 mb-1">{item.year}</p>
-
-                {/* Preview del review con line-clamp */}
-                {/* <p
-                  className="text-gray-600 text-sm line-clamp-2"
-                  title="Click para ver más"
-                >
-                  {item.review}
-                </p> */}
               </div>
             </div>
-
-
           ))}
         </div>
       </div>
@@ -129,9 +128,13 @@ const Featured = () => {
                 {currentTitle}
               </h2>
 
-              {featuredItems.find(item => item.title === currentTitle)?.review && (
+              {featuredItems.find((item) => item.title === currentTitle)
+                ?.review && (
                 <p className="text-gray-300 text-sm mb-6 max-w-xl mx-auto font-secondary italic">
-                  {featuredItems.find(item => item.title === currentTitle).review}
+                  {
+                    featuredItems.find((item) => item.title === currentTitle)
+                      .review
+                  }
                 </p>
               )}
 

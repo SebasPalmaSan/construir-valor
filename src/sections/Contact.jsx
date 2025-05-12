@@ -1,8 +1,13 @@
 import { useState } from "react";
+import { useEffect } from "react";
+
 import emailjs from '@emailjs/browser';
 import Button from "../components/buttons/Button";
+import { useMetadata } from "../utils/MetadataContext";
 
 const Contact = () => {
+  
+  const { setTitle, setDescription, activeSection } = useMetadata();
   const [formData, setFormData] = useState({
     nombre: "",
     apellido: "",
@@ -10,6 +15,17 @@ const Contact = () => {
     mail: "",
     mensaje: "",
   });
+
+  useEffect(() => {
+    if (activeSection === "contact") {
+      setTitle("Contacto | Construir Valor - Obras en CABA y GBA");
+      setDescription(
+        "Ponete en contacto con Construir Valor. Realizamos construcciones y reformas en CABA y GBA. Completá el formulario y te respondemos a la brevedad."
+      );
+    }
+  }, [activeSection, setTitle, setDescription]);
+
+
 
   const handleChange = (e) => {
     setFormData({

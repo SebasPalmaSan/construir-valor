@@ -36,20 +36,17 @@ const Navbar = () => {
           <img
             src={isoLogo}
             alt="Construir Valor"
-            className="h-14 object-cover block md:hidden"
+            className="h-18 object-cover block md:hidden"
           />
           <img
             src={logo}
             alt="Construir Valor"
-            className="h-14 object-cover hidden md:block"
+            className="h-20 object-cover hidden md:block"
           />
         </Link>
 
         {/* Menú de escritorio */}
         <nav className="hidden md:flex space-x-8 items-center">
-          <Link to="/" onClick={() => handleScroll('banner')} className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg">
-            Inicio
-          </Link>
           <Link to="/" onClick={() => handleScroll('about-us')} className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg">
             Nosotros
           </Link>
@@ -61,6 +58,9 @@ const Navbar = () => {
           </Link>
           <Link to="/" onClick={() => handleScroll('clients')} className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg">
             Clientes
+          </Link>
+          <Link to="/" onClick={() => handleScroll('contact')} className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg">
+            Contacto
           </Link>
             <button onClick={() => setShowModal(true)}>
               <Button variant="primary" size="sm">Solicitar presupuesto</Button>

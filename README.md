@@ -1,12 +1,41 @@
-# React + Vite
+# 🏗️ Construir Valor - Sitio institucional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Construir Valor** es un sitio institucional desarrollado para una empresa constructora especializada en obras en CABA y GBA. El sitio comunica la identidad visual de la marca, presenta sus servicios, obras destacadas, clientes y permite recibir solicitudes de presupuesto a través de formularios con envío por email.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- [React 19](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/) para animaciones
+- [Zustand](https://zustand-demo.pmnd.rs/) para gestión de estados globales
+- [EmailJS](https://www.emailjs.com/) para el envío de formularios sin backend
+- [React Router DOM](https://reactrouter.com/) para navegación
+- [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) para validación de props
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎨 Diseño
+
+- La identidad visual se basa en el [Manual de marca de Construir Valor](#), respetando:
+  - Paleta de colores corporativa
+  - Tipografía principal: **Teko**
+  - Tipografía secundaria: **Saira**
+- El diseño es **responsive**, adaptado para escritorio, tablet y mobile.
+
+---
+
+## 📦 Instalación y ejecución local
+
+1. Clonar el repositorio:
+git clone https://github.com/tu-usuario/construir-valor.git
+
+cd construir-valor
+
+2. Intalar dependencias
+npm install
+
+3. Ejecutar proyecto
+npm run dev

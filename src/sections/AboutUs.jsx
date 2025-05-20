@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useMetadata } from "../utils/MetadataContext";
-import Image from "../../public/images/image3.png";
 
 const AboutUs = () => {
   const { setTitle, setDescription, activeSection } = useMetadata();
@@ -19,7 +18,7 @@ const AboutUs = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-10">
         <div className="w-full md:w-1/2">
           <img
-            src={Image}
+            src="https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767131/image3_olxlwu.png"
             alt="Imagen Nosotros"
             className="w-full h-auto object-cover rounded-lg shadow-md"
           />

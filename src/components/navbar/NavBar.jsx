@@ -8,9 +8,6 @@ import Button from '../buttons/Button';
 import QuoteModal from '../modals/QuoteModal';
 
 
-import logo from '../../../public/images/logos/construir_valor_logo_color-removebg-preview.png';
-import isoLogo from '../../../public/images/logos/construir valor_iso color.png';
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -34,12 +31,12 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center" onClick={() => handleScroll('banner')}>
           <img
-            src={isoLogo}
+            src="https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769734/construir_valor_iso_color-removebg-preview_mdqezh.png"
             alt="Construir Valor"
             className="h-18 object-cover block md:hidden"
           />
           <img
-            src={logo}
+            src="https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769736/construir_valor_logo_color_fwo3fm.jpg"
             alt="Construir Valor"
             className="h-20 object-cover hidden md:block"
           />

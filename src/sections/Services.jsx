@@ -1,15 +1,11 @@
 import { useEffect } from "react";
 import { useMetadata } from "../utils/MetadataContext";
-import Image1 from "../../public/images/obras-industriales.png";
-import Image2 from "../../public/images/home-services.jpg";
-import Image3 from "../../public/images/reformas.jpg";
-import Image4 from "../../public/images/reparacion-techo.png";
 
 const services = [
-  { title: "Obras privadas e industriales", year: 2012, image: Image1 },
-  { title: "Home services", year: 2014, image: Image2 },
-  { title: "Reformas", year: 2012, image: Image3 },
-  { title: "Reparaciones de techos", year: 2012, image: Image4 },
+  { title: "Obras privadas e industriales", year: 2012, image: "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767132/obras-industriales_wgxdgk.png"},
+  { title: "Home services", year: 2014, image: "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767128/home-services_rbu2ar.jpg" },
+  { title: "Reformas", year: 2012, image: "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767132/reformas_wwhhrg.jpg" },
+  { title: "Reparaciones de techos", year: 2012, image: "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767134/reparacion-techo_dtjvkl.png" },
 ];
 
 const Services = () => {

@@ -1,5 +1,4 @@
 import Button from '../components/buttons/Button';
-import Image from '../../public/images/image1.png'; 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -21,10 +20,12 @@ const Banner = () => {
     <section className="relative w-full h-[500px] flex items-center justify-center">
       {/* Imagen de fondo */}
       <img
-        src={Image}
+        src="https://res.cloudinary.com/dnxlkkx8s/image/upload/w_1600,q_auto,f_auto/v1747767133/image1_mo0xte.png"
         alt="Banner Construir Valor"
         className="absolute inset-0 w-full h-full object-cover"
+        loading="lazy"
       />
+
 
       {/* Capa oscura para mejor lectura */}
       {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}

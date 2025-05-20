@@ -2,37 +2,77 @@
     {
       "title": "Boedo",
       "year": 2025,
-      "images": ["boedo2025-1.png", "boedo2025-2.png", "boedo2025-3.png", "boedo2025-4.png"],
+      "images": [
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767183/boedo2025-3_vhc9uo.png", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767173/boedo2025-1_gornba.png", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767175/boedo2025-4_ssuqck.png", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767186/boedo2025-2_hscsur.png"
+        ],
       "review": "Reparación de techo en vivienda de Boedo. En esta obra abordamos la reparación integral del techo de una vivienda afectada por filtraciones prolongadas. Las clavaderas estaban completamente deterioradas, lo que provocó el desprendimiento de las chapas y el colapso parcial de la cubierta. Nuestro trabajo consistió en el retiro completo de la estructura de madera dañada, su reemplazo por una nueva estructura sólida y segura, la colocación de chapas nuevas y la instalación de un sistema de zinguería renovado."
     },
     {
       "title": "Pileta - Canning",
       "year": 2025,
-      "images": ["Canning-pileta-2025-1.jpg", "Canning-pileta-2025-2.jpg", "Canning-pileta-2025-3.jpg", "Canning-pileta-2025-4.jpg", "Canning-pileta-2025-5.jpg", "Canning-pileta-2025-6.jpg", "Canning-pileta-2025-7.jpg", "Canning-pileta-2025-8.jpg", "Canning-pileta-2025-9.jpg"],
+      "images": [
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767171/Canning-pileta-2025-6_lbxo7l.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767170/Canning-pileta-2025-7_yfsinq.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767171/Canning-pileta-2025-8_mccdmb.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767216/Canning-pileta-2025-3_ysyqfn.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767206/Canning-pileta-2025-9_wfsnoy.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767223/Canning-pileta-2025-1_dbdgxr.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767228/Canning-pileta-2025-4_zb08xs.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767274/Canning-pileta-2025-2_c8zxrc.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767304/Canning-pileta-2025-5_gmwzeb.jpg"
+      ],
       "review": "Construcción de pileta de 15 x 6 m en country de Canning. Proyecto realizado desde cero, abarcando todas las etapas de obra: desde la excavación inicial hasta la colocación del revestimiento final. Los trabajos incluyeron tareas de albañilería, plomería (instalación del sistema de filtrado y climatización del agua) y electricidad (iluminación interior de la pileta). La ejecución comprendió: excavación, compactación del terreno, construcción de mampostería de contención, hormigonado estructural y revestimiento final con piedra Bali, aportando un acabado estético y duradero."
     },
     {
       "title": "Muelle 82",
       "year": 2021,
-      "images": ["Muelle-82.png"],
+      "images": [
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767180/Muelle-82_wxjmb6.png",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747768669/PHOTO-2023-08-28-09-05-20_grahkr.jpg",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747768667/PHOTO-2023-11-27-14-54-07_borwyt.jpg",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747768668/PHOTO-2023-11-27-14-54-06_yh3jyd.jpg",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747768667/PHOTO-2023-11-27-14-54-05_lspury.jpg",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747768691/B709D97C-F49D-4105-8F5A-A45C26ECB288_qi0tqr.jpg"
+      ],
       "review": "Obra en Muelles 82 – Construcción en seco llave en mano. Proyecto desarrollado íntegramente desde cero mediante sistema de construcción en seco, lo que permitió una ejecución rápida y eficiente en un plazo total de 45 días. La obra incluyó el montaje de estructura metálica, instalaciones completas de plomería y electricidad, aplicación de aislaciones hidrófugas y acústicas, y terminaciones finales con pintura. Además, se realizó el diseño interior y se entregó el espacio totalmente terminado, bajo la modalidad “llave en mano”. La construcción en seco nos permitió optimizar tiempos sin comprometer calidad, logrando una solución moderna, funcional y durable."
     },
     {
       "title": "Galpón 2500 mts",
       "year": 2018,
-      "images": ["Galpon-2500mts-1.jpg", "Galpon-2500mts-2.jpg", "Galpon-2500mts-3.jpg", "Galpon-2500mts-4.jpg", "Galpon-2500mts-5.jpg", "Galpon-2500mts-6.jpg"],
+      "images": [
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767251/Galpon-2500mts-6_jkl6ug.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767243/Galpon-2500mts-2_of3fcm.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767284/Galpon-2500mts-4_e2lzn4.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767253/Galpon-2500mts-3_hbdezn.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767249/Galpon-2500mts-5_euf5w4.jpg", 
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767206/Galpon-2500mts-1_ya8wuz.jpg"
+      ],
       "review": "Espacio logístico de gran escala."
     },
     {
       "title": "Pileta",
       "year": 2019,
-      "images": ["Pileta.jpg"],
+      "images": [
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767171/Pileta_mawzsn.jpg",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769131/PHOTO-2024-10-28-10-18-41_1_e9zrt3.jpg",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769177/F289CC13-FBCB-4EBA-ABB6-157E6E568D48_l1ctgn.jpg"
+
+      ],
       "review": "Construcción de pileta de uso mixto."
     },
     {
       "title": "Tinglado C.A.S.I",
       "year": 2022,
-      "images": ["Tinglado.JPG"],
+      "images": [
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769517/0D2FBF24-FCD3-41EA-A7EC-2A0CC4F341D3_x77rjv.jpg",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769508/8A57E54A-E0AC-4246-AC1E-A0C284D0388A_yro9gk.jpg",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769511/5E5C9CB6-AF08-4027-A758-ACE70C2695B8_ueftmm.jpg",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769505/827178B9-F49B-4742-8296-988F4B460056_tggwu7.jpg",
+        "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767220/Tinglado_mw0bnh.jpg"
+      ],
       "review": "Cubierta metálica para club deportivo."
     }
   ]

@@ -1,25 +1,22 @@
 import { useEffect, useState } from "react";
 import { useMetadata } from "../utils/MetadataContext";
-import Image1 from "../../public/images/image6.jpg";
-import Image2 from "../../public/images/image7.png";
-import Image3 from "../../public/images/image8.png";
 
 const clientsData = [
   {
     name: "Juan Pérez (Empresa Constructora El Pilar)",
-    image: Image1,
+    image: "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767130/image6_asspwz.jpg",
     comment:
       "Contratamos el servicio para una obra edilicia de gran envergadura en la zona de Palermo...",
   },
   {
     name: "Lucía Fernández (Gerente de Compras, Centro Médico Vital)",
-    image: Image2,
+    image: "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767131/image7_ndhevm.png",
     comment:
       "Nuestra institución necesitaba una remodelación integral de varios sectores clave...",
   },
   {
     name: "Roberto Méndez (Director General, Granja Tres Arroyos S.A.)",
-    image: Image3,
+    image: "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767130/image8_k0zntg.png",
     comment:
       "Encargamos un proyecto industrial complejo con necesidades técnicas específicas...",
   },

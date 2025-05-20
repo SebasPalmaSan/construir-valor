@@ -55,10 +55,11 @@ const Featured = () => {
               {/* Imagen con tooltip flotante */}
               <div className="relative group bg-white rounded-md overflow-hidden shadow-md">
                 <img
-                  src={`/images/obras/${item.images[0]}`}
+                  src={item.images[0]}
                   alt={item.title}
                   className="w-72 h-72 object-cover hover:opacity-80 transition duration-300"
                 />
+
 
                 {/* Tooltip que aparece al hacer hover */}
                 <div className="absolute inset-0 bg-secondary-900 bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 text-sm text-center transition duration-300 line-clamp-3">
@@ -140,10 +141,11 @@ const Featured = () => {
 
               <div className="flex justify-center">
                 <img
-                  src={`/images/obras/${currentImages[currentImageIndex]}`}
+                  src={currentImages[currentImageIndex]}
                   alt={`Imagen ${currentImageIndex + 1}`}
                   className="w-full max-w-4xl object-contain max-h-[80vh] rounded-md shadow-md transition"
                 />
+
               </div>
             </div>
           </div>

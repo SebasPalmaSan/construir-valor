@@ -18,7 +18,7 @@ const AboutUs = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-10">
         <div className="w-full md:w-1/2">
           <img
-            src="https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747767131/image3_olxlwu.png"
+            src="https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769736/construir_valor_logo_color_fwo3fm.jpg"
             alt="Imagen Nosotros"
             className="w-full h-auto object-cover rounded-lg shadow-md"
           />

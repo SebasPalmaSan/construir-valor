@@ -5,7 +5,7 @@ import Banner from "../../sections/Banner";
 import AboutUs from "../../sections/AboutUs";
 import Services from "../../sections/Services";
 import Featured from "../../sections/Featured";
-import Clients from "../../sections/Clients";
+// import Clients from "../../sections/Clients";
 import Contact from "../../sections/Contact";
 import { Link } from "react-router-dom";
 import { IoLogoWhatsapp } from "react-icons/io5";
@@ -52,7 +52,7 @@ const Root = () => {
           <Featured />
         </section>
         <section id="clients">
-          <Clients />
+          {/* <Clients /> */}
         </section>
         <section id="contact">
           <Contact />

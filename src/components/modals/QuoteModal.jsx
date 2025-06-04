@@ -1,7 +1,12 @@
-// src/components/modals/QuoteModal.jsx
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion, AnimatePresence } from 'framer-motion';
+
+const FORM_LINKS = {
+  reformas: "https://forms.clickup.com/90131266734/p/f/2ky3vz5e-4133/FZVMA63FKECR2BI3DJ/formulariode-reformas",
+  home: "https://forms.clickup.com/90131266734/p/f/2ky3vz5e-4413/SFL392QR3JV4XGEHJH/formulariode-home-service",
+  techos: "https://forms.clickup.com/90131266734/p/f/2ky3vz5e-4733/CPFOEPLPT74QCNCSEN/formulario-techos"
+};
 
 const QuoteModal = ({ isOpen, onClose }) => {
   const [form, setForm] = useState({
@@ -10,7 +15,8 @@ const QuoteModal = ({ isOpen, onClose }) => {
     location: '',
     budget: '',
     needsReform: false,
-    needsRepair: false,
+    needsHome: false,
+    needsTechos: false,
   });
 
   const handleChange = (e) => {
@@ -23,16 +29,17 @@ const QuoteModal = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     const templateParams = {
       name: form.name,
       email: form.email,
       location: form.location,
       budget: form.budget,
       needsReform: form.needsReform ? 'Sí' : 'No',
-      needsRepair: form.needsRepair ? 'Sí' : 'No',
+      needsHome: form.needsHome ? 'Sí' : 'No',
+      needsTechos: form.needsTechos ? 'Sí' : 'No',
     };
-  
+
     emailjs.send(
       'service_s4y4i4k', // <- reemplazá con tu SERVICE ID
       'template_2jiafto', // <- reemplazá con tu TEMPLATE ID
@@ -40,6 +47,14 @@ const QuoteModal = ({ isOpen, onClose }) => {
       'kYw5_1QY8nKKFEg5-' // <- reemplazá con tu PUBLIC KEY
     )
     .then(() => {
+      // Abrir el formulario correspondiente
+      if (form.needsReform) {
+        window.open(FORM_LINKS.reformas, "_blank");
+      } else if (form.needsHome) {
+        window.open(FORM_LINKS.home, "_blank");
+      } else if (form.needsTechos) {
+        window.open(FORM_LINKS.techos, "_blank");
+      }
       alert('Gracias por tu solicitud. Nos pondremos en contacto pronto.');
       onClose();
     })
@@ -48,7 +63,6 @@ const QuoteModal = ({ isOpen, onClose }) => {
       alert('Ocurrió un error al enviar tu solicitud. Por favor intentá más tarde.');
     });
   };
-  
 
   return (
     <AnimatePresence>
@@ -128,16 +142,25 @@ const QuoteModal = ({ isOpen, onClose }) => {
                       checked={form.needsReform}
                       onChange={handleChange}
                     />
-                    Requiere reforma
+                    Reformas
                   </label>
                   <label className="flex items-center gap-2">
                     <input
                       type="checkbox"
-                      name="needsRepair"
-                      checked={form.needsRepair}
+                      name="needsHome"
+                      checked={form.needsHome}
                       onChange={handleChange}
                     />
-                    Requiere reparación
+                    Home services
+                  </label>
+                  <label className="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      name="needsTechos"
+                      checked={form.needsTechos}
+                      onChange={handleChange}
+                    />
+                    Techos
                   </label>
                 </div>
                 <button

@@ -53,9 +53,9 @@ const Navbar = () => {
           <Link to="/" onClick={() => handleScroll('featured')} className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg">
             Obras
           </Link>
-          <Link to="/" onClick={() => handleScroll('clients')} className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg">
+          {/* <Link to="/" onClick={() => handleScroll('clients')} className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg">
             Clientes
-          </Link>
+          </Link> */}
           <Link to="/" onClick={() => handleScroll('contact')} className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg">
             Contacto
           </Link>

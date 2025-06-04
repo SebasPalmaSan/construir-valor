@@ -93,81 +93,41 @@ const QuoteModal = ({ isOpen, onClose }) => {
               </button>
               <h2 className="text-2xl font-bold mb-4">Solicitar Presupuesto</h2>
               <form onSubmit={handleSubmit} className="space-y-4">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Nombre y apellido"
-                  value={form.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 rounded p-2"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Correo electrónico"
-                  value={form.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 rounded p-2"
-                />
-                <select
-                  name="location"
-                  value={form.location}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 rounded p-2"
-                >
-                  <option value="">¿Reside en CABA o GBA?</option>
-                  <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
-                  <option value="GBA">Gran Buenos Aires</option>
-                </select>
-                <select
-                  name="budget"
-                  value={form.budget}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 rounded p-2"
-                >
-                  <option value="">¿Está dispuesto a gastar entre...?</option>
-                  <option value="800000-1000000">$800.000 - $1.000.000</option>
-                  <option value="1100000-1500000">$1.100.000 - $1.500.000</option>
-                  <option value="1500000+">$1.500.000 o más</option>
-                </select>
-                <div className="flex gap-4">
-                  <label className="flex items-center gap-2">
-                    <input
-                      type="checkbox"
-                      name="needsReform"
-                      checked={form.needsReform}
-                      onChange={handleChange}
-                    />
-                    Reformas
-                  </label>
-                  <label className="flex items-center gap-2">
-                    <input
-                      type="checkbox"
-                      name="needsHome"
-                      checked={form.needsHome}
-                      onChange={handleChange}
-                    />
-                    Home services
-                  </label>
-                  <label className="flex items-center gap-2">
-                    <input
-                      type="checkbox"
-                      name="needsTechos"
-                      checked={form.needsTechos}
-                      onChange={handleChange}
-                    />
-                    Techos
-                  </label>
-                </div>
+                <h1 className='italic'>Seleccioná tu tipo de trabajo:</h1>
+                  <div className="flex gap-4">
+                      <label className="flex items-center gap-2">
+                        <input
+                          type="checkbox"
+                          name="needsReform"
+                          checked={form.needsReform}
+                          onChange={handleChange}
+                        />
+                        Reformas
+                      </label>
+                      <label className="flex items-center gap-2">
+                        <input
+                          type="checkbox"
+                          name="needsHome"
+                          checked={form.needsHome}
+                          onChange={handleChange}
+                        />
+                        Home service
+                      </label>
+                      <label className="flex items-center gap-2">
+                        <input
+                          type="checkbox"
+                          name="needsTechos"
+                          checked={form.needsTechos}
+                          onChange={handleChange}
+                        />
+                        Techos
+                      </label>
+                    </div>
                 <button
                   type="submit"
                   className="w-full bg-primary-500 text-white py-2 rounded hover:bg-primary-600 transition"
                 >
-                  Enviar solicitud
+                  Continuar
                 </button>
               </form>
             </div>

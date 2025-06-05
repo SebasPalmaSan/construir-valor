@@ -14,18 +14,17 @@ const QuoteModal = ({ isOpen, onClose }) => {
     email: '',
     location: '',
     budget: '',
-    needsReform: false,
-    needsHome: false,
-    needsTechos: false,
+    workType: '',
   });
 
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value } = e.target;
     setForm((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: value,
     }));
   };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,9 +34,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
       email: form.email,
       location: form.location,
       budget: form.budget,
-      needsReform: form.needsReform ? 'Sí' : 'No',
-      needsHome: form.needsHome ? 'Sí' : 'No',
-      needsTechos: form.needsTechos ? 'Sí' : 'No',
+      workType: form.workType,
     };
 
     emailjs.send(
@@ -47,13 +44,9 @@ const QuoteModal = ({ isOpen, onClose }) => {
       'kYw5_1QY8nKKFEg5-' // <- reemplazá con tu PUBLIC KEY
     )
     .then(() => {
-      // Abrir el formulario correspondiente
-      if (form.needsReform) {
-        window.open(FORM_LINKS.reformas, "_blank");
-      } else if (form.needsHome) {
-        window.open(FORM_LINKS.home, "_blank");
-      } else if (form.needsTechos) {
-        window.open(FORM_LINKS.techos, "_blank");
+    // Abrir el formulario correspondiente
+      if (form.workType && FORM_LINKS[form.workType]) {
+        window.open(FORM_LINKS[form.workType], "_blank");
       }
       alert('Gracias por tu solicitud. Nos pondremos en contacto pronto.');
       onClose();
@@ -97,28 +90,34 @@ const QuoteModal = ({ isOpen, onClose }) => {
                   <div className="flex gap-4">
                       <label className="flex items-center gap-2">
                         <input
-                          type="checkbox"
-                          name="needsReform"
-                          checked={form.needsReform}
+                          type="radio"
+                          name="workType"
+                          value="reformas"
+                          checked={form.workType === 'reformas'}
                           onChange={handleChange}
+                          required
                         />
                         Reformas
                       </label>
                       <label className="flex items-center gap-2">
                         <input
-                          type="checkbox"
-                          name="needsHome"
-                          checked={form.needsHome}
+                          type="radio"
+                          name="workType"
+                          value="home"
+                          checked={form.workType === 'home'}
                           onChange={handleChange}
+                          required
                         />
                         Home service
                       </label>
                       <label className="flex items-center gap-2">
                         <input
-                          type="checkbox"
-                          name="needsTechos"
-                          checked={form.needsTechos}
+                          type="radio"
+                          name="workType"
+                          value="techos"
+                          checked={form.workType === 'techos'}
                           onChange={handleChange}
+                          required
                         />
                         Techos
                       </label>

@@ -14,13 +14,13 @@ const Footer = () => {
           <img
             src="https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769734/construir_valor_logo_blanco_nbwqqb.png"
             alt="Construir Valor logo"
-            className="hidden md:block w-80 h-auto"
+            className="hidden md:block w-80 h-auto hover:opacity-70 transition-opacity duration-300"
           />
           {/* Iso logo para pantallas móviles */}
           <img
             src="https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769734/construir_valor_iso_blanco_mfsqsa.png"
             alt="Construir Valor iso logo"
-            className="block md:hidden w-32 h-auto"
+            className="block md:hidden w-32 h-auto hover:opacity-70 transition-opacity duration-300"
           />
         </Link>
 

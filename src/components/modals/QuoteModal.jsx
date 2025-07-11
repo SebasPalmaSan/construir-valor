@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const FORM_LINKS = {
@@ -10,10 +9,6 @@ const FORM_LINKS = {
 
 const QuoteModal = ({ isOpen, onClose }) => {
   const [form, setForm] = useState({
-    name: '',
-    email: '',
-    location: '',
-    budget: '',
     workType: '',
   });
 
@@ -25,36 +20,14 @@ const QuoteModal = ({ isOpen, onClose }) => {
     }));
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const templateParams = {
-      name: form.name,
-      email: form.email,
-      location: form.location,
-      budget: form.budget,
-      workType: form.workType,
-    };
-
-    emailjs.send(
-      'service_s4y4i4k', // <- reemplazá con tu SERVICE ID
-      'template_2jiafto', // <- reemplazá con tu TEMPLATE ID
-      templateParams,
-      'kYw5_1QY8nKKFEg5-' // <- reemplazá con tu PUBLIC KEY
-    )
-    .then(() => {
     // Abrir el formulario correspondiente
-      if (form.workType && FORM_LINKS[form.workType]) {
-        window.open(FORM_LINKS[form.workType], "_blank");
-      }
-      alert('Gracias por tu solicitud. Nos pondremos en contacto pronto.');
+    if (form.workType && FORM_LINKS[form.workType]) {
+      window.open(FORM_LINKS[form.workType], "_blank");
       onClose();
-    })
-    .catch((error) => {
-      console.error('Error al enviar el email:', error);
-      alert('Ocurrió un error al enviar tu solicitud. Por favor intentá más tarde.');
-    });
+    }
   };
 
   return (

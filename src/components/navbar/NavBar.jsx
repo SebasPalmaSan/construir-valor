@@ -33,12 +33,12 @@ const Navbar = () => {
           <img
             src="https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769734/construir_valor_iso_color-removebg-preview_mdqezh.png"
             alt="Construir Valor"
-            className="h-18 object-cover block md:hidden"
+            className="h-18 object-cover block md:hidden hover:opacity-70 transition-opacity duration-300"
           />
           <img
             src="https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769736/construir_valor_logo_color_fwo3fm.jpg"
             alt="Construir Valor"
-            className="h-20 object-cover hidden md:block"
+            className="h-20 object-cover hidden md:block hover:opacity-70 transition-opacity duration-300"
           />
         </Link>
 

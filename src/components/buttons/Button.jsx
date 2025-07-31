@@ -46,7 +46,6 @@ const Button = ({
   );
 };
 
-// Validación de PropTypes
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func,

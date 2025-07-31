@@ -23,7 +23,6 @@ const QuoteModal = ({ isOpen, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Abrir el formulario correspondiente
     if (form.workType && FORM_LINKS[form.workType]) {
       window.open(FORM_LINKS[form.workType], "_blank");
       onClose();

@@ -45,7 +45,7 @@ const Clients = () => {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* LADO IZQUIERDO */}
+ 
           <div className="flex flex-col items-center lg:items-start">
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-6">
               {clientsData.map((client, index) => (
@@ -68,7 +68,7 @@ const Clients = () => {
             </p>
           </div>
 
-          {/* LADO DERECHO */}
+       
           <div className="flex flex-col items-center lg:items-end text-white">
             <img
               src={selectedClient.image}

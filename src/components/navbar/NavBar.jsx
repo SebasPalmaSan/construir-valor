@@ -20,7 +20,7 @@ const Navbar = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      closeMenu(); // Cierra el menú móvil si está abierto
+      closeMenu(); 
     }
   };
 
@@ -28,7 +28,7 @@ const Navbar = () => {
     <header className="bg-white shadow-md sticky top-0 z-40">
 
       <div className="flex items-center justify-between h-20 px-4 sm:px-6">
-        {/* Logo */}
+   
         <Link to="/" className="flex items-center" onClick={() => handleScroll('banner')}>
           <img
             src="https://res.cloudinary.com/dnxlkkx8s/image/upload/v1747769734/construir_valor_iso_color-removebg-preview_mdqezh.png"
@@ -42,7 +42,7 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Menú de escritorio */}
+     
         <nav className="hidden md:flex space-x-8 items-center">
           <Link to="/" onClick={() => handleScroll('about-us')} className="text-secondary-900 hover:text-primary-500 font-normal transition-colors duration-300 font-secondary text-lg">
             Nosotros
@@ -65,7 +65,7 @@ const Navbar = () => {
 
         </nav>
 
-        {/* Menú hamburguesa - SIEMPRE visible en móviles */}
+   
         <div className="block sm:hidden z-50">
           <button onClick={toggleMenu} aria-label="Abrir menú">
             {isOpen ? (
@@ -77,7 +77,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Overlay y menú lateral */}
+
       <AnimatePresence>
         {isOpen && (
           <>

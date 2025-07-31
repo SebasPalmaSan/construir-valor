@@ -52,7 +52,7 @@ const Featured = () => {
               className="flex-shrink-0 w-72 sm:w-auto flex flex-col items-center cursor-pointer"
               onClick={() => openModal(item.images, item.title)}
             >
-              {/* Imagen con tooltip flotante */}
+ 
               <div className="relative group bg-white rounded-md overflow-hidden shadow-md">
                 <img
                   src={item.images[0]}
@@ -61,13 +61,11 @@ const Featured = () => {
                 />
 
 
-                {/* Tooltip que aparece al hacer hover */}
                 <div className="absolute inset-0 bg-secondary-900 bg-opacity-80 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 text-sm text-center transition duration-300 line-clamp-3">
                   <span>{item.review}</span>
                 </div>
               </div>
 
-              {/* Texto debajo de la imagen */}
               <div className="p-4 font-secondary text-center w-full">
                 <h3 className="font-normal text-lg text-secondary-900 mb-1">
                   {item.title}
@@ -79,7 +77,7 @@ const Featured = () => {
         </div>
       </div>
 
-      {/* Modal fullscreen */}
+  
       {modalOpen && (
         <div
           className="fixed inset-0 z-50 bg-secondary-900 bg-opacity-90 flex items-center justify-center"
@@ -89,7 +87,7 @@ const Featured = () => {
             className="relative w-full h-full overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Cerrar */}
+    
             <button
               onClick={closeModal}
               className="absolute top-6 right-6 text-white text-4xl font-bold z-50"
@@ -97,7 +95,6 @@ const Featured = () => {
               &times;
             </button>
 
-            {/* Flechas navegación */}
             {currentImages.length > 1 && (
               <>
                 <button
@@ -123,7 +120,7 @@ const Featured = () => {
               </>
             )}
 
-            {/* Contenido del modal */}
+   
             <div className="max-w-6xl mx-auto px-4 py-20 text-center">
               <h2 className="text-white text-3xl md:text-4xl font-bold mb-4 font-primary">
                 {currentTitle}

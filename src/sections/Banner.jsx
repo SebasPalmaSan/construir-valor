@@ -12,13 +12,13 @@ const Banner = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      closeMenu(); // Cierra el menú móvil si está abierto
+      closeMenu();
     }
   };
 
   return (
     <section className="relative w-full h-[500px] flex items-center justify-center">
-      {/* Imagen de fondo */}
+
       <img
         src="https://res.cloudinary.com/dnxlkkx8s/image/upload/w_1600,q_auto,f_auto/v1747767133/image1_mo0xte.png"
         alt="Banner Construir Valor"
@@ -27,10 +27,10 @@ const Banner = () => {
       />
 
 
-      {/* Capa oscura para mejor lectura */}
+
       {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}
 
-      {/* Contenido encima de la imagen */}
+
       <div className="relative z-10 text-center px-4">
         <h1 className="text-white text-4xl md:text-6xl font-primary font-medium mb-6 mt-24 leading-tight uppercase">
           Creamos valor <br />

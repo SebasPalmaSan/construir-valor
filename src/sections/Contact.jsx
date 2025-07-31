@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useEffect } from "react";
-
 import emailjs from '@emailjs/browser';
 import Button from "../components/buttons/Button";
 import { useMetadata } from "../utils/MetadataContext";
@@ -38,10 +37,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.send(
-      'service_s4y4i4k', // <- reemplazá con tu SERVICE ID
-      'template_2jiafto', // <- reemplazá con tu TEMPLATE ID
+      'service_s4y4i4k',
+      'template_2jiafto',
       formData,
-      'kYw5_1QY8nKKFEg5-' // <- reemplazá con tu PUBLIC KEY
+      'kYw5_1QY8nKKFEg5-'
     )
     .then(() => {
       alert("Mensaje enviado con éxito. ¡Gracias por contactarnos!");
